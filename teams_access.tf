@@ -3,7 +3,7 @@ locals {
 }
 
 output "test" {
-  value = local.workspaceIds
+  value = nonsensitive(local.workspaceIds)
 }
 
 # resource "tfe_team_access" "hcp-deployment" {
