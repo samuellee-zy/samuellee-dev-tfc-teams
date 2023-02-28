@@ -15,4 +15,5 @@ output "test" {
   value = [
     for test in local.workspaceIds : length(test)
   ]
+  sensitive = false
 }
