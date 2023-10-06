@@ -12,5 +12,5 @@ resource "tfe_team_access" "devs-access-all-workspaces" {
 resource "tfe_team_project_access" "serviceNow" {
   access     = "admin"
   team_id    = tfe_team.serviceNow
-  project_id = data.tfe_outputs.samuellee-dev-projects-outputs.values.project_serviceNow
+  project_id = data.tfe_outputs.samuellee-dev-projects-outputs.values.project_serviceNow.id
 }
