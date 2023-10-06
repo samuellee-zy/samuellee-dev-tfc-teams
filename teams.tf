@@ -21,4 +21,7 @@ resource "tfe_team" "developers" {
 resource "tfe_team" "serviceNow" {
   name         = "ServiceNow"
   organization = var.orgName
+  organization_access {
+    manage_workspaces = true
+  }
 }
