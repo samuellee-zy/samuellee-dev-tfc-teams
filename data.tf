@@ -6,7 +6,7 @@ data "tfe_outputs" "samuellee-dev-workspace-outputs" {
 
 data "tfe_outputs" "samuellee-dev-projects-outputs" {
   organization = var.orgName
-  workspace = var.samuelleeDevProjects
+  workspace    = var.samuelleeDevProject
 }
 
 
