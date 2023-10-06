@@ -17,3 +17,8 @@ resource "tfe_team" "developers" {
   name         = "developers"
   organization = var.orgName
 }
+
+resource "tfe_team" "serviceNow" {
+  name         = "ServiceNow"
+  organization = var.orgName
+}
